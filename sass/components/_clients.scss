@@ -1,0 +1,84 @@
+.button-client {
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 170px;
+  height: 90px;
+  border: 1px solid #AFB1B8;
+  background-color: $white-color;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    border-color: $accent-color;
+    transition: $hover;
+}
+}
+
+.button-icon-one {
+  width: 44.27px;
+  height: 49.23px;
+  fill: #AFB1B8;
+
+  .button-client:hover & {
+    fill: $accent-color;
+    transition: $hover;
+  
+}
+}
+
+.button-icon-two {
+  width: 40px;
+  height: 52px;
+  fill: #AFB1B8;
+
+  .button-client:hover & {
+    fill: $accent-color;
+    transition: $hover;
+}
+}
+
+.button-icon-three {
+  width: 41px;
+  height: 42.6px;
+  fill: #AFB1B8;
+
+  .button-client:hover & {
+    fill: $accent-color;
+    transition: $hover;
+}
+}
+
+.button-icon-four {
+  width: 79.66px;
+  height: 42.02px;
+  fill: #AFB1B8;
+
+  .button-client:hover & {
+  fill: $accent-color;
+  transition: $hover;
+}
+}
+
+.button-icon-five {
+  width: 59px;
+  height: 47px;
+  fill: #AFB1B8;
+
+  .button-client:hover & {
+    fill: $accent-color;
+    transition: $hover;
+}
+}
+
+.button-icon-six {
+  width: 88.48px;
+  height: 45.44px;
+  fill: #AFB1B8;
+
+  .button-client:hover & {
+  fill: $accent-color;
+  transition: $hover;
+  
+}
+}
+

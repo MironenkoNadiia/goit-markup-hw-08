@@ -1,0 +1,26 @@
+.portfolio-nav {
+  display: inline-flex;
+  border: none;
+  margin: 0;
+  padding: 6px 22px;
+  border-radius: 4px;
+  background-color: #F5F4FA;
+  color: $secondary-color;
+  font-weight: 700;
+  cursor: pointer;
+
+  &:hover,
+  &:focus {
+    background-color: $accent-color;
+    color: $white-color;
+    transition: $hover;
+}
+}
+
+.nav-center {
+  justify-content: center;
+}
+
+.m-n {
+  margin-right: 8px;
+}

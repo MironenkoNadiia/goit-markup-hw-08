@@ -1,0 +1,55 @@
+.adress {
+  margin-left: auto;
+}
+
+.mail-button {
+  display: inline-flex;
+  align-items: center;
+  border-style: none;
+  padding-top: 32px;
+  padding-bottom: 32px;
+  background-color: $white-color;
+  text-decoration: none;
+  margin-right: 30px;
+  cursor: pointer;
+}
+
+.mail-button-icon {
+  height: 11.2px;
+  width: 16px;
+  margin-right: 10px;
+  fill: $main-color;
+
+  .mail-button:hover & {
+  fill: $accent-color;
+  transition: $hover;
+}
+}
+
+.phone-icon {
+  height: 15px;
+  width: 10px;
+  margin-right: 10px;
+  fill: $main-color;
+
+  .mail-button:hover & {
+  fill: $accent-color;
+  transition: $hover;
+}
+}
+
+.e-mail-address {
+  color: $main-color;
+  font-weight: 500;
+font-size: 14px;
+line-height: 1.2;
+letter-spacing: 0.02em;
+
+.mail-button:hover & {
+  color: $accent-color;
+  transition: $hover;
+}
+}
+
+
+

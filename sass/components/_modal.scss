@@ -1,0 +1,190 @@
+.modal {
+  position: absolute;
+  width: 528px;
+  height: 581px;
+  box-shadow: 
+  0px 2px 1px rgba(0, 0, 0, 0.2), 
+  0px 1px 1px rgba(0, 0, 0, 0.14), 
+  0px 1px 3px rgba(0, 0, 0, 0.12);
+  left: 536px;
+  top: 160px;
+  background-color: $white-color;
+  border-radius: 4px;
+}
+
+.modal-title {
+  font-weight: 700px;
+font-size: 20px;
+line-height: 1.2;
+text-align: center;
+letter-spacing: 0.03em;
+color: $secondary-color;
+margin-top: 40px;
+margin-left: 40px;
+margin-right: 40px;
+margin-bottom: 30px;
+}
+
+.backdrop {
+  position: fixed;
+  width: 1600px;
+  height: 1024px;
+  left: 0px;
+  top: 0px;
+  background: rgba(0, 0, 0, 0.2);
+  z-index: 3;
+
+  &.is-hidden {
+    opacity: 0;
+    pointer-events: none;
+}
+}
+
+.space {
+  position: relative;
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 448px;
+  height: 40px;
+  margin-bottom: 28px;
+  cursor: pointer;
+  padding-left: 42px;
+
+  &:focus+.label{
+  color: $accent-color;
+  transform: translateY(-32px);
+}
+
+  &:not(:placeholder-shown)+label {
+  transform: translateY(-36px);
+}
+
+  &:focus~.icon {
+  fill: var(--accent-color);
+}
+
+  &:hover,
+  &:focus {
+  border: 1px solid #2196F3;
+}
+}
+
+.label {
+  position: absolute;
+  left: 82px;
+  top: 12px;
+  bottom: 12px;
+  font-weight: 400px;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+}
+
+.comment {
+  position: relative;
+}
+
+.label-comment {
+  position: absolute;
+  left: 57px;
+  top: 12px;
+  bottom: 12px;
+  font-weight: 400px;
+  font-size: 14px;
+  line-height: 1.2;
+  letter-spacing: 0.01em;
+
+  .comment:focus &  {
+  color: $accent-color;
+  transform: translateY(-36px);
+}
+
+.comment-space:focus+& {
+  color: $accent-color;
+  transform: translateY(-32px);
+}
+}
+
+.comment-space {
+  border: 1px solid rgba(33, 33, 33, 0.2);
+  box-sizing: border-box;
+  border-radius: 4px;
+  width: 448px;
+  height: 120px;
+  cursor: pointer;
+  margin-bottom: 20px;
+}
+
+.name.icon {
+  position: absolute;
+  width: 12px;
+  height: 12px;
+  top: 14px;
+  left: 60px;
+}
+
+.tel.icon {
+  position: absolute;
+  width: 13px;
+  height: 13px;
+  top: 13.26px;
+  left: 60px;
+}
+
+.e-mail.icon {
+  position: absolute;
+  width: 15px;
+  height: 12px;
+  top: 14px;
+  left: 60px;
+}
+
+.accept {
+    display: flex;
+  align-items: center;
+  margin-left: 54px;
+  margin-bottom: 30px;
+  font-weight: 400px;
+  font-size: 14px;
+  line-height: 1.7;
+  letter-spacing: 0.03em;
+}
+
+.icon-cross {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  width: 30px;
+  height: 30px;
+  border: 1px solid rgba(0, 0, 0, 0.1);
+  border-radius: 50%;
+  padding: 7px;
+  cursor: pointer;
+}
+
+.accent {
+  color: $accent-color;
+}
+
+.checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  padding: 0;
+  border: 0;
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+
+.accept-icon {
+  margin-left: 9px;
+
+  .checkbox:checked+& {
+background-color: $accent-color;
+background-image: url("../../img/vector/icon\ check.svg");
+background-size: contain;
+background-color: transparent;
+}
+}

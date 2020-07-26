@@ -1,0 +1,117 @@
+.footer {
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 1.2;
+  color: $white-color;
+}
+
+.bgcolor {
+  background-color: #2f303a;
+  text-align: center;
+}
+
+.flex-base {
+  display: flex;
+  align-items: baseline;
+}
+
+.join {
+  margin-left: 69px;
+  margin-right: 94px;
+  margin-top: 56px;
+  margin-bottom: 56px;
+  color: $white-color;
+}
+
+.social-footer {
+  display: inline-block;
+  height: 44px;
+  width: 44px;
+  border-radius: 50%;
+  border-style: none;
+  padding: 0;
+  margin: 0;
+  background-color:rgba(255, 255, 255, 0.1);
+  cursor: pointer;
+  margin-bottom: 24px;
+  margin-left: 10px;
+
+  &:hover {
+        background-color: $accent-color;
+        transition: $hover;
+}
+}
+
+.subscribe-section {
+  margin-right: 12px;
+}
+
+.subscribe {
+  
+  width: 358px;
+  height: 50px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  box-sizing: border-box;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  background-color: $footer-background;
+}
+
+.e-mail {
+  position: absolute;
+  top: 15px;
+  left: 16px;
+
+  .subscribe:focus+& {
+  color: transparent;
+
+  .subscribe:not(:placeholder-shown)+ & {
+  color: transparent;
+}
+}
+}
+
+.e-mail-button {
+  display: flex;
+position: relative;
+}
+
+.social-footer-icon {
+  width: 20px;
+  height: 20px;
+  fill: $white-color;
+}
+
+.send {
+  display: flex;
+  align-items: center;
+  align-self: center;
+  color: $white-color;
+  background-color: $accent-color;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 30px;
+  cursor: pointer;
+  padding: 10px 32px;
+  border: none;
+  min-width: 200px;
+  height: 50px;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+  border-radius: 4px;
+  margin-left: 12px;
+}
+
+.send-icon {
+  
+  width: 24px;
+  height: 24px;
+  margin-left: 10px;
+}
+
+.subscribe .white {
+  color: white;
+}
+
+.white {
+  color: $white-color;
+}
