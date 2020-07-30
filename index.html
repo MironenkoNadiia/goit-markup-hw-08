@@ -11,10 +11,20 @@
   <body>
     <!-- header -->
       <header>
-        <nav class="container no-margin">
-          <div class="flex">
+        
+          <div class="header">
+            <div class="container">
+            <nav class="nav">
             <a class="logo" href="./index.html">Web<span class="black-logo">Studio</span></a>
-            <ul class="list flex">
+            <button type="button" class="menu-button is-open" aria-expanded="false" aria-controls="menu-container" data-menu-button>
+              <svg width="24px" height="24px" aria-label="menu-button">
+                <use class="icon-menu" href="./img/sprite3.svg#icon-menu_24px"></use>
+                <use class="icon-close" href="./img/sprite3.svg#icon-close_24px"></use>
+              </svg>
+            </button>
+            <div class="menu-container" id="menu-container" data-menu>
+              
+            <ul>
               <li><a class="nav-text current " href="">Студия</a></li>
               <li><a class="nav-text " href="./portfolio.html">Портфолио</a></li>
               <li><a class="nav-text " href="">Контакты</a></li>
@@ -33,15 +43,25 @@
                     </svg>
                     <span>+38 096 111 11 11</span>
                   </button>
+                  
                 </div>
+                
               </address>
+            </div>
+            </nav>
           </div>
-        </nav>
+          </div>
       </header>
     <main>
     <!-- решения для бизнеса -->
-      <section class="overlay">
+      <section class="overlay thumb">
         <div class="container hero">
+          <!-- <div class="thumb">
+            <img 
+            srcset="./img/images/Header-for-phone.jpg 1x,
+                    ../img/images/Header-for-phone@2x.jpg 2x"
+            src="./img/images/Header-for-phone.jpg" alt="">
+          </div> -->
           <h1  class="hero-title">Эффективные решения <br> для вашего бизнеса</h1>
             <button data-modal-open class="button primary">Заказать услугу</button>
               <div data-modal class="backdrop is-hidden">

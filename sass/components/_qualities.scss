@@ -74,3 +74,14 @@
   line-height: 24px;
   color: $main-color;
 }
+
+.qualities {
+  
+  @media screen and (min-width: $tablet) {
+    width: 50%;
+  }
+
+  @media screen and (min-width: $desctop) {
+    width: 25%;
+  }
+}

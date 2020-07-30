@@ -1,0 +1,24 @@
+{
+    "version": 3,
+    "mappings": "",
+    "sources": [
+        "main.scss",
+        "utils/_variables.scss",
+        "components/_common.scss",
+        "components/_logo.scss",
+        "components/header/_nav.scss",
+        "components/header/_nav-address.scss",
+        "components/_hero.scss",
+        "utils/_placeholders.scss",
+        "components/_modal.scss",
+        "components/_qualities.scss",
+        "components/_activity.scss",
+        "components/_team.scss",
+        "components/_clients.scss",
+        "components/footer/_footer-address.scss",
+        "components/portfolio/_portfolio-nav.scss",
+        "components/portfolio/_our-projects.scss"
+    ],
+    "names": [],
+    "file": "main.css"
+}
