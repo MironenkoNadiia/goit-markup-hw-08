@@ -179,8 +179,18 @@ h4 {
   font-weight: 700;
   letter-spacing: 0.02em;
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
+}
+
+.nav-text:last-child {
+  margin-bottom: 60px;
+}
+
+.nav-text:not(:last-child) {
+  margin-bottom: 40px;
+}
+
+.nav-text:first-child {
+  padding-bottom: 8px;
 }
 
 .nav-text:hover, .nav-text:focus {
@@ -196,13 +206,14 @@ h4 {
 
 .current::after {
   content: "";
-  width: 100%;
+  width: 61px;
   height: 4px;
   position: absolute;
   display: block;
   bottom: 0;
   background-color: #2196f3;
   border-radius: 2px;
+  left: 195px;
 }
 
 .header-margin {
@@ -246,11 +257,9 @@ h4 {
       -ms-flex-align: center;
           align-items: center;
   border-style: none;
-  padding-top: 32px;
-  padding-bottom: 32px;
   background-color: #ffffff;
   text-decoration: none;
-  margin-right: 30px;
+  margin-bottom: 16px;
   cursor: pointer;
 }
 

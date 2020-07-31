@@ -240,13 +240,15 @@
     </main>
     <!-- footer -->
   <footer class="bgcolor">
-    <div class="container all-footer flex-base">
+    <div class="container">
       <div class="footer-address">
         <a class="logo" href="./index.html">Web<span class="white">Studio</span></a>
-        <address class="white">
-          г. Киев, пр-т Леси Украинки,26
-          info@example.com <br>
-          +38 099 111 11 11
+        <address>
+          <ul>
+            <li class="text-address">г. Киев, пр-т Леси Украинки,26</li>
+            <li class="mail-address">info@example.com</li>
+            <li class="phone-number">+38 099 111 11 11</li>
+          </ul>
         </address>
       </div>
       <div class="join">
@@ -283,16 +285,23 @@
         </ul>
       </div>
       <div class="subscribe-section">
-        <h4 class="footer flex">Подпишитесь на рассылку</h4>
-        <div class="e-mail-button">
-          <input class="subscribe" type="text" name="e-mail">
+        <h4 class="footer">Подпишитесь на рассылку</h4>
+  
+        <form class="e-mail-button" action="e-mail">
+          <input class="subscribe" type="text" name="e-mail" placeholder=" ">
           <label class="e-mail" for="e-mail">E-mail</label>
-        </div>
+  
+  
+          <button class="send ">Подписаться
+            <svg class="send-icon">
+              <use href="./img/sprite3.svg#icon-icon-send"></use>
+            </svg>
+          </button>
+        </form>
+  
       </div>
-      <button class="send">Подписаться</button>
-  
     </div>
-  
   </footer>
+  <script src="./js/modal.js"></script>
   </body>
 </html>

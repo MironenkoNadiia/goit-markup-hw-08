@@ -30,16 +30,21 @@
   letter-spacing: 0.02em;
   // margin-left: 50px;
   display: block;
-  padding-top: 32px;
-  padding-bottom: 32px;
 
+  &:last-child {
+    margin-bottom: 60px;
+  }
 
-// &:first-child {
-//   margin-left: 85px;
-//   }
+  &:not(:last-child){
+    margin-bottom: 40px;
+  }
 
-&:hover,
-&:focus {
+  &:first-child {
+  padding-bottom: 8px;
+  }
+
+  &:hover,
+  &:focus {
   color: $accent-color;
   transition: $hover;
 }
@@ -51,13 +56,14 @@ display: block;
 
 &::after {
 content: "";
-width: 100%;
+width: 61px;
 height: 4px;
 position: absolute;
 display: block;
 bottom: 0;
 background-color: $accent-color;
 border-radius: 2px;
+left: 195px;
 }
 }
 
