@@ -64,6 +64,10 @@
   padding-left: 24px;
 }
 
+.flex-element:not(:last-child) {
+  margin-bottom: 30px;
+}
+
 .flex-element:nth-child(3n) {
   margin-right: 0;
 }

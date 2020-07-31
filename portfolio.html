@@ -11,9 +11,18 @@
   <body>
     <!-- header -->
     <header>
-      <nav class="container no-margin header-margin">
-        <div class="flex center">
-          <a class="logo" href="./index.html">Web<span class="black-logo">Studio</span></a>
+      <div class="header">
+        <div class="container">
+          <nav class="nav">
+            <a class="logo" href="./index.html">Web<span class="black-logo">Studio</span></a>
+            <button type="button" class="menu-button is-open" aria-expanded="false" aria-controls="menu-container"
+              data-menu-button>
+              <svg width="24px" height="24px" aria-label="menu-button">
+                <use class="icon-menu" href="./img/sprite3.svg#icon-menu_24px"></use>
+                <use class="icon-close" href="./img/sprite3.svg#icon-close_24px"></use>
+              </svg>
+            </button>
+            <div class="menu-container" id="menu-container" data-menu>
           <ul class="list flex">
             <li><a class="nav-text interactive" href="./index.html">Студия</a></li>
             <li><a class="nav-text interactive current" href="">Портфолио</a></li>
@@ -31,9 +40,11 @@
                 <svg class="phone-icon">
                   <use href="./img/sprite2.svg#icon-phone"></use>
                 </svg>
-                <span class="interactive">+38 096 111 11 11</span>
+                <span>+38 096 111 11 11</span>
               </button>
+          
             </div>
+          
           </address>
         </div>
         </nav>
@@ -41,8 +52,8 @@
     <main>
       <!-- upper navigation -->
       <section>
-        <div class="container">
-          <ul class="flex nav-center">
+        <div>
+          <ul class="nav-container">
             <li>
               <button class="portfolio-nav m-n">Все</button>
             </li>

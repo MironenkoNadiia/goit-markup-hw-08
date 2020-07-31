@@ -1,10 +1,11 @@
-.button {
+%button {
   font-family: inherit;
   display: inline-block;
   border-radius: 4px;
 }
 
-.list {
+%list {
   list-style: none;
   color: $secondary-color;
 }
+

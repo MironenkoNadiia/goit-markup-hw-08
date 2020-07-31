@@ -1,5 +1,5 @@
 .portfolio-nav {
-  display: inline-flex;
+  
   border: none;
   margin: 0;
   padding: 6px 22px;
@@ -14,8 +14,11 @@
     background-color: $accent-color;
     color: $white-color;
     transition: $hover;
+  }
+
+  
 }
-}
+
 
 .nav-center {
   justify-content: center;
@@ -23,4 +26,16 @@
 
 .m-n {
   margin-right: 8px;
+  margin-bottom: 15px;
+}
+
+.nav-container {
+  display: flex;
+  flex-wrap: wrap;
+
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
 }

@@ -67,7 +67,16 @@ body {
 }
 
 section {
-  margin-bottom: 94px;
+  margin-bottom: 60px;
+}
+
+.flex {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 .button {
@@ -152,10 +161,11 @@ h4 {
   content: " ";
   background-color: #ffffff;
   left: 0;
-  top: 50px;
+  top: 60px;
   width: 100%;
   padding: 15px;
   text-align: center;
+  border: 1px solid #ECECEC;
   display: none;
 }
 
@@ -367,8 +377,11 @@ h4 {
   line-height: 1.36;
   letter-spacing: 0.06em;
   color: #ffffff;
+  margin-top: 118px;
+  margin-left: 60px;
+  margin-right: 60px;
+  margin-bottom: 30px;
   padding-bottom: 0px;
-  margin-bottom: 0;
 }
 
 .hero-order {
@@ -391,17 +404,6 @@ h4 {
   border: none;
   width: 200px;
   height: 50px;
-}
-
-.button {
-  font-family: inherit;
-  display: inline-block;
-  border-radius: 4px;
-}
-
-.list {
-  list-style: none;
-  color: #212121;
 }
 
 .modal {
@@ -607,14 +609,10 @@ h4 {
   opacity: 0;
 }
 
-.block {
-  margin-left: 30px;
-}
-
 .antenna {
-  display: inline-block;
+  display: block;
   height: 120px;
-  width: 270px;
+  width: 450px;
   margin-bottom: 30px;
   border-radius: 4px;
   border-style: none;
@@ -626,9 +624,9 @@ h4 {
 }
 
 .clock {
-  display: inline-block;
+  display: block;
   height: 120px;
-  width: 270px;
+  width: 450px;
   border-radius: 4px;
   border-style: none;
   background-color: #F5F4FA;
@@ -640,9 +638,9 @@ h4 {
 }
 
 .diagram {
-  display: inline-block;
+  display: block;
   height: 120px;
-  width: 270px;
+  width: 450px;
   border-radius: 4px;
   border-style: none;
   background-color: #F5F4FA;
@@ -654,9 +652,9 @@ h4 {
 }
 
 .astronaut {
-  display: inline-block;
+  display: block;
   height: 120px;
-  width: 270px;
+  width: 450px;
   border-radius: 4px;
   border-style: none;
   background-color: #F5F4FA;
@@ -689,6 +687,10 @@ h4 {
   .qualities {
     width: 25%;
   }
+}
+
+.activity {
+  display: none;
 }
 
 .just-cont {
@@ -727,17 +729,27 @@ h4 {
   -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 0px 0px 4px 4px;
+  max-width: 450px;
+  height: auto;
+}
+
+.white-background:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .black-text {
   color: #212121;
   letter-spacing: 0.03em;
+  margin-top: 30px;
 }
 
 .around {
   -webkit-box-pack: space-evenly;
       -ms-flex-pack: space-evenly;
           justify-content: space-evenly;
+  margin-left: 122px;
+  margin-right: 122px;
+  margin-bottom: 24px;
 }
 
 .social {
@@ -771,21 +783,43 @@ h4 {
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
 }
 
+.our-team {
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 33px;
+  padding-top: 60px;
+}
+
 .button-client {
+  display: inline-block;
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
   border-radius: 4px;
-  width: 170px;
+  width: 210px;
   height: 90px;
   border: 1px solid #AFB1B8;
   background-color: #ffffff;
   cursor: pointer;
+  margin: 15px;
 }
 
 .button-client:hover, .button-client:focus {
   border-color: #2196f3;
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.clients {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+}
+
+.clients-container {
+  margin: -5px;
+  padding: 0;
 }
 
 .button-icon-one {
@@ -872,15 +906,32 @@ h4 {
   text-align: center;
 }
 
-.flex-base {
-  -webkit-box-align: baseline;
-      -ms-flex-align: baseline;
-          align-items: baseline;
+.footer-address {
+  display: inline-block;
+}
+
+.footer-address > .logo {
+  margin-right: auto;
+  margin-left: auto;
+  margin-top: 60px;
+  margin-bottom: 20px;
+}
+
+.text-address {
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+  margin-bottom: 8px;
+}
+
+.mail-address {
+  margin-bottom: 8px;
 }
 
 .join {
-  margin-left: 69px;
-  margin-right: 94px;
+  margin-left: 137px;
+  margin-right: 137px;
   margin-top: 56px;
   margin-bottom: 56px;
   color: #ffffff;
@@ -907,7 +958,7 @@ h4 {
 }
 
 .subscribe-section {
-  margin-right: 12px;
+  display: inline-block;
 }
 
 .subscribe {
@@ -938,6 +989,7 @@ h4 {
 
 .e-mail-button {
   position: relative;
+  width: 100%;
 }
 
 .social-footer-icon {
@@ -947,11 +999,13 @@ h4 {
 }
 
 .send {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
   -webkit-box-align: center;
       -ms-flex-align: center;
           align-items: center;
   -ms-flex-item-align: center;
-      -ms-grid-row-align: center;
       align-self: center;
   color: #ffffff;
   background-color: #2196f3;
@@ -959,20 +1013,27 @@ h4 {
   font-size: 16px;
   line-height: 30px;
   cursor: pointer;
-  padding: 10px 32px;
   border: none;
   min-width: 200px;
   height: 50px;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
-  margin-left: 12px;
+  padding: 10px 32px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 60px;
 }
 
 .send-icon {
   width: 24px;
   height: 24px;
   margin-left: 10px;
+}
+
+.subscribe {
+  width: 450px;
+  margin-bottom: 20px;
 }
 
 .subscribe .white {
@@ -984,9 +1045,6 @@ h4 {
 }
 
 .portfolio-nav {
-  display: -webkit-inline-box;
-  display: -ms-inline-flexbox;
-  display: inline-flex;
   border: none;
   margin: 0;
   padding: 6px 22px;
@@ -1012,6 +1070,20 @@ h4 {
 
 .m-n {
   margin-right: 8px;
+  margin-bottom: 15px;
+}
+
+.nav-container {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+  text-align: center;
 }
 
 .border {
@@ -1080,6 +1152,10 @@ h4 {
   margin-bottom: 20px;
   text-align: start;
   padding-left: 24px;
+}
+
+.flex-element:not(:last-child) {
+  margin-bottom: 30px;
 }
 
 .flex-element:nth-child(3n) {

@@ -9,15 +9,27 @@
     0px 1px 1px rgba(0, 0, 0, 0.14), 
     0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 0px 0px 4px 4px;
+  max-width: 450px;
+  height: auto;
+
+  &:not(:last-child){
+  margin-bottom: 30px;
 }
+}
+
+
 
 .black-text {
   color: $secondary-color;
   letter-spacing: 0.03em;
+  margin-top: 30px;
 }
 
 .around {
   justify-content: space-evenly;
+  margin-left: 122px;
+  margin-right: 122px;
+  margin-bottom: 24px;
 }
 
 .social {
@@ -47,4 +59,19 @@
     fill: white;
     transition: $hover;
 }
+}
+
+.our-team {
+  font-weight: bold;
+  font-size: 28px;
+  line-height: 33px;
+  padding-top: 60px;
+}
+
+.member-one {
+  
+
+  @media screen and (min-resolution:2dppx) {
+    
+  }
 }

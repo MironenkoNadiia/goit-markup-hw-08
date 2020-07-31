@@ -1,17 +1,31 @@
 .button-client {
+  display: inline-block;
   box-sizing: border-box;
   border-radius: 4px;
-  width: 170px;
+  width: 210px ;
   height: 90px;
   border: 1px solid #AFB1B8;
   background-color: $white-color;
   cursor: pointer;
+  margin: 15px;
 
   &:hover,
   &:focus {
     border-color: $accent-color;
     transition: $hover;
 }
+
+}
+
+.clients {
+  display: flex;
+  flex-wrap: wrap;
+  
+}
+
+.clients-container {
+  margin: -5px;
+  padding: 0;
 }
 
 .button-icon-one {

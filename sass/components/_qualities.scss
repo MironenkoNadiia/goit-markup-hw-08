@@ -3,14 +3,10 @@
   opacity: 0;
 }
 
-.block {
-  margin-left: 30px;
-}
-
 .antenna {
-  display: inline-block;
+  display: block;
   height: 120px;
-  width: 270px;
+  width: 450px;
   margin-bottom: 30px;
   border-radius: 4px;
   border-style: none;
@@ -22,9 +18,9 @@
 }
 
 .clock {
-  display: inline-block;
+  display: block;
   height: 120px;
-  width: 270px;
+  width: 450px;
   border-radius: 4px;
   border-style: none;
   background-color: #F5F4FA;
@@ -36,9 +32,9 @@
 }
 
 .diagram {
-  display: inline-block;
+  display: block;
   height: 120px;
-  width: 270px;
+  width: 450px;
   border-radius: 4px;
   border-style: none;
   background-color: #F5F4FA;
@@ -50,9 +46,9 @@
 }
 
 .astronaut {
-  display: inline-block;
+  display: block;
   height: 120px;
-  width: 270px;
+  width: 450px;
   border-radius: 4px;
   border-style: none;
   background-color: #F5F4FA;
