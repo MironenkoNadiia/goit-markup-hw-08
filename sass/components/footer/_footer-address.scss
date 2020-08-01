@@ -3,6 +3,7 @@
   font-size: 14px;
   line-height: 1.2;
   color: $white-color;
+  
 }
 
 .bgcolor {
@@ -19,7 +20,10 @@
     margin-top: 60px;
     margin-bottom: 20px;
   }
-
+@media screen and(min-width:$tablet) {
+  margin-left: auto;
+}
+  
 }
 
 .text-address {
@@ -35,18 +39,17 @@ margin-bottom: 8px;
 }
 
 
-
-// .flex-base {
-//   display: flex;
-//   align-items: baseline;
-// }
-
 .join {
   margin-left: 137px;
   margin-right: 137px;
   margin-top: 56px;
   margin-bottom: 56px;
   color: $white-color;
+
+  @media screen and(min-width:$tablet) {
+    margin-left: auto;
+    margin-bottom: 60px;
+  }
 }
 
 .social-footer {
@@ -151,4 +154,9 @@ margin-bottom: 8px;
 
 .white {
   color: $white-color;
+}
+
+.social-links {
+  display: flex;
+  justify-content: center;
 }

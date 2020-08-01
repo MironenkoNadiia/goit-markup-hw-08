@@ -12,6 +12,14 @@
   
   background-color: $white-color;
   border-radius: 4px;
+
+  @media screen and (min-width:$tablet) {
+    left: 159px;
+    top: 200px;
+    width: 450px;
+    height: 609px;
+
+  }
 }
 
 .modal-title {

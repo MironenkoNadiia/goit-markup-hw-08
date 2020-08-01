@@ -7,20 +7,21 @@
   line-height: 1.2;
   margin-top: 16px;
   margin-bottom: 16px;
-  margin-left: 15px;
-  // margin-right: auto;
+  
+  
   width: 141px;
   height: 28px;
 
-  @media screen and (min-width:$mobile) {
+  @media screen and (min-width:$tablet) {
     margin-top: 26px;
     margin-bottom: 26px;
   }
 
-  @media screen and (min-width:$tablet) {
+  @media screen and (min-width:$desctop) {
     margin-top: 24px;
     margin-bottom: 24px;
-    margin-left: 215px;
+    margin-left: 200px;
+    margin-right: 85px;
     width: 153px;
     height: 31px;
     font-size: 28px;

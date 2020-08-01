@@ -38,4 +38,18 @@
   padding-left: 15px;
   padding-right: 15px;
   text-align: center;
+
+  @media screen and (min-width:$mobile){
+    width: $mobile;
+  }
+
+  @media screen and (min-width:$tablet){
+    width: $tablet;
+    justify-content: center;
+    margin-top: 60px;
+  }
+
+  @media screen and (min-width:$desctop){
+    width: $desctop;
+  }
 }

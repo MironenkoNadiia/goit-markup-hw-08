@@ -23,25 +23,25 @@
                   </svg>
                 </button>
                 <div class="menu-container" id="menu-container" data-menu>
-                <ul>
+                <ul class="list-nav">
                   <li><a class="nav-text current " href="">Студия</a></li>
                   <li><a class="nav-text " href="./portfolio.html">Портфолио</a></li>
                   <li><a class="nav-text " href="">Контакты</a></li>
                 </ul>
-                <address>
-                <div class="adress">
-                  <div class="mail-button">
+              <address class="flex adress">
+                <div>
+                  <button class="mail-button">
                     <svg class="mail-button-icon">
-                    <use href="./img/sprite2.svg#icon-envelope"></use>
+                      <use href="./img/sprite2.svg#icon-envelope"></use>
                     </svg>
                     <a class="e-mail-address" href="info@devstudio.com">info@devstudio.com</a>
-                  </div>
-                  <div class="mail-button">
+                  </button>
+                  <button class="mail-button">
                     <svg class="phone-icon">
-                    <use href="./img/sprite2.svg#icon-phone"></use>
+                      <use href="./img/sprite2.svg#icon-phone"></use>
                     </svg>
-                    <span class="phone-numbersu">+38 096 111 11 11</span>
-                  </div>
+                    <span>+38 096 111 11 11</span>
+                  </button>
                 </div>
               </address>
             </div>
@@ -106,8 +106,8 @@
         <section class="section">
           <div class="container">
             <h2 class="no-margin opacity">Наши преимущества</h2>
-              <ul class="qualities">
-                <li>
+              <ul class="set">
+                <li class="set-items">
                   <svg class="antenna"></svg>
                   
                     <h3 class="section-title">Внимание к деталям</h3>
@@ -116,7 +116,7 @@
                         формированию позиции.
                     </p>
                 </li>
-                <li>
+                <li class="set-items">
                   <svg class="clock"></svg>
                   
                     <h3 class="section-title">Пунктуальность</h3>
@@ -125,7 +125,7 @@
                         влечет за собой.
                       </p>
                 </li>
-                <li>
+                <li class="set-items">
                   <svg class="diagram"></svg>
                   
                     <h3 class="section-title">Планирование</h3>
@@ -134,7 +134,7 @@
                         степени обуславливает.
                       </p>
                 </li>
-                <li>
+                <li class="set-items">
                   <svg class="astronaut"></svg>
                   
                     <h3 class="section-title">Современные технологии</h3>
@@ -185,17 +185,17 @@
       </section>
     <!-- наша команда -->
       <section class="team-background">
-        <div class="container ">
+        <div class="container">
           <h2 class="our-team">Наша команда</h2>
-          <ul lang="en">
-            <li class="white-background">
+          <ul class="set" lang="en">
+            <li class="white-background set-items">
               <a href="">
-                <img class="member-three" srcset="./img/images/member1.jpg 1x,
+                <img class="photo" srcset="./img/images/member1.jpg 1x,
                                           ./img/images/member1@2x.jpg 2x" src="./img/images/member1.jpg" alt="Николай Кучеренко"
                   width="450px" /></a>
               <h3 class="interactive black-text">Николай Кучеренко</h3>
               <h4>Product Designer</h4>
-              <ul class="flex around">
+              <ul class="social-links">
                 <li>
                   <button class="social">
                     <svg class="social-icon">
@@ -226,14 +226,14 @@
                 </li>
               </ul>
             </li>
-            <li class="white-background">
+            <li class="white-background set-items">
               <a href="">
-                <img class="member-three" srcset="./img/images/member2.jpg 1x,
+                <img class="photo" srcset="./img/images/member2.jpg 1x,
                                           ./img/images/member2@2x.jpg 2x" src="./img/images/member2.jpg" alt="Ольга Иванова"
                   width="450px" /></a>
               <h3 class="interactive black-text">Ольга Иванова</h3>
               <h4>Frontend Developer</h4>
-              <ul class="flex around">
+              <ul class="social-links">
                 <li>
                   <button class="social">
                     <svg class="social-icon">
@@ -264,16 +264,16 @@
                 </li>
               </ul>
             </li>
-            <li class="white-background">
+            <li class="white-background set-items">
               <a href="">
-                <img class="member-three"
+                <img class="photo"
                 srcset="./img/images/member3.jpg 1x,
                         ./img/images/member3@2x.jpg 2x"
                     src="./img/images/member3.jpg" alt="Андрей Шевченко" width="450px"
               /></a>
               <h3 class="interactive black-text">Андрей Шевченко</h3>
               <h4>Marketing</h4>
-              <ul class="flex around">
+              <ul class="social-links">
                 <li>
                   <button class="social">
                     <svg class="social-icon">
@@ -304,16 +304,16 @@
                 </li>
               </ul>
             </li>
-          <li class="white-background">
+          <li class="white-background set-items">
               <a href="">
-                <img class="member-three" 
+                <img class="photo" 
                     srcset="./img/images/member4.jpg 1x,
                             ./img/images/member4@2x.jpg 2x" 
                       src="./img/images/member4.jpg" alt="Иван Николаев"
                   width="450px" /></a>
               <h3 class="interactive black-text">Иван Николаев</h3>
               <h4>UI Designer</h4>
-              <ul class="flex around">
+              <ul class="social-links">
                 <li>
                   <button class="social">
                     <svg class="social-icon">
@@ -400,7 +400,7 @@
     </main>
     <!-- футер -->
     <footer class="bgcolor">
-        <div class="container">
+        <div class="container set">
           <div class="footer-address">
             <a class="logo" href="./index.html">Web<span class="white">Studio</span></a>
               <address>
@@ -413,7 +413,7 @@
           </div>
           <div class="join">
             <h4>присоединяйтесь</h4>
-          <ul class="flex nav-center adress">
+          <ul class="flex social-links">
             <li>
               <button class="social-footer">
                 <svg class="social-footer-icon">
