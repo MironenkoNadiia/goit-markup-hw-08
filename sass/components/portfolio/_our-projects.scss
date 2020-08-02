@@ -21,6 +21,9 @@
 .wow {
   position: relative;
   overflow: hidden;
+    @media screen and (min-width: $desctop) {
+    width: 370px;
+}
 }
 
 .projects-overlay {
@@ -67,18 +70,36 @@
 
 .flex-element:not(:last-child) {
   margin-bottom: 30px;
-}
 
-// .flex-element:nth-child(3n) {
-//   margin-right: 0;
-// }
-// .flex-element:nth-last-child(-n + 3) {
+  @media screen and (min-widt:$desctop) {
+    width: 370px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-right: 30px;
+    margin-bottom: 30px;
+  //   &:nth-child(3n) {
+  // margin-right: 0;
+}
+//   &:nth-last-child(-n + 3) {
 //   margin-bottom: 0;
 // }
+//   }
+}
+
+
+
 
 .border:hover .projects-overlay {
   transform: translateY(0%);
   transition: $hover;
   color: $white-color;
   
+}
+
+.set-item {
+  width: 370px;
+
+    @media screen and (min-width: $tablet) {
+    width: 50%;
+}
 }

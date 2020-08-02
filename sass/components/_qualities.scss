@@ -122,19 +122,17 @@
 .set {
   
   @media screen and (min-width: $tablet) {
-    width: 768px;
+    width: $tablet;
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
   }
 
   @media screen and (min-width: $desctop) {
-    width:1170px;
+    width:$desctop;
     display: flex;
     flex-wrap: wrap;
-    &:not(:last-child){
-      margin-right: 30px;
-    }
+    
   }
   
 }

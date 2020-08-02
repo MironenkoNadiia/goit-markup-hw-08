@@ -843,15 +843,12 @@ h4 {
 
 @media screen and (min-width: 1200px) {
   .set {
-    width: 1170px;
+    width: 1200px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
-  }
-  .set:not(:last-child) {
-    margin-right: 30px;
   }
 }
 
@@ -925,7 +922,6 @@ h4 {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
-    margin: 15px;
   }
 }
 
@@ -1025,6 +1021,17 @@ h4 {
   border-color: #2196f3;
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+@media screen and (min-width: 1200px) {
+  .button-client {
+    width: 170px;
+    height: 90px;
+    margin-left: 0;
+  }
+  .button-client:not(:last-child) {
+    margin-right: 30px;
+  }
 }
 
 .clients {
@@ -1144,6 +1151,14 @@ h4 {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .footer-address {
+    margin-left: 0;
+    margin-right: 0;
+    margin-bottom: 60px;
+  }
+}
+
 .text-address {
   font-size: 14px;
   line-height: 1.71;
@@ -1171,6 +1186,14 @@ h4 {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .join {
+    margin-left: 59px;
+    margin-right: 59px;
+    margin-top: 72px;
+  }
+}
+
 .social-footer {
   display: inline-block;
   height: 44px;
@@ -1195,9 +1218,15 @@ h4 {
   display: inline-block;
 }
 
+@media screen and (min-width: 1200px) {
+  .subscribe-section {
+    margin-top: 72px;
+  }
+}
+
 .subscribe {
-  width: 358px;
-  height: 50px;
+  width: 450px;
+  margin-bottom: 20px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-box-sizing: border-box;
           box-sizing: border-box;
@@ -1205,6 +1234,13 @@ h4 {
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
   border-radius: 4px;
   background-color: #2f303a;
+}
+
+@media screen and (min-width: 1200px) {
+  .subscribe {
+    width: 358px;
+    height: 50px;
+  }
 }
 
 .e-mail {
@@ -1224,6 +1260,17 @@ h4 {
 .e-mail-button {
   position: relative;
   width: 100%;
+}
+
+@media screen and (min-width: 1200px) {
+  .e-mail-button {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-box-pack: baseline;
+        -ms-flex-pack: baseline;
+            justify-content: baseline;
+  }
 }
 
 .social-footer-icon {
@@ -1248,7 +1295,7 @@ h4 {
   line-height: 30px;
   cursor: pointer;
   border: none;
-  min-width: 200px;
+  width: 200px;
   height: 50px;
   -webkit-box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
           box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
@@ -1257,17 +1304,13 @@ h4 {
   margin-left: auto;
   margin-right: auto;
   margin-bottom: 60px;
+  margin-left: 12px;
 }
 
 .send-icon {
   width: 24px;
   height: 24px;
   margin-left: 10px;
-}
-
-.subscribe {
-  width: 450px;
-  margin-bottom: 20px;
 }
 
 .subscribe .white {
@@ -1373,6 +1416,12 @@ h4 {
   overflow: hidden;
 }
 
+@media screen and (min-width: 1200px) {
+  .wow {
+    width: 370px;
+  }
+}
+
 .projects-overlay {
   display: inline-block;
   position: absolute;
@@ -1423,11 +1472,34 @@ h4 {
   margin-bottom: 30px;
 }
 
+@media screen and (min-widt: 1200px) {
+  .flex-element:not(:last-child) {
+    width: 370px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    margin-right: 30px;
+    margin-bottom: 30px;
+  }
+}
+
 .border:hover .projects-overlay {
   -webkit-transform: translateY(0%);
           transform: translateY(0%);
   -webkit-transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   transition: 250ms cubic-bezier(0.4, 0, 0.2, 1);
   color: #ffffff;
+}
+
+.set-item {
+  width: 370px;
+}
+
+@media screen and (min-width: 768px) {
+  .set-item {
+    width: 50%;
+  }
 }
 /*# sourceMappingURL=main.css.map */

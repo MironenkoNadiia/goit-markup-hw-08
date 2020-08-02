@@ -15,6 +15,16 @@
     transition: $hover;
 }
 
+@media screen and(min-width:$desctop){
+  width: 170px ;
+  height: 90px;
+  margin-left: 0;
+
+  &:not(:last-child){
+    margin-right: 30px;
+  }
+}
+
 }
 
 .clients {
