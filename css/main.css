@@ -45,6 +45,9 @@ body {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
 }
 
 @media screen and (min-width: 480px) {
@@ -464,6 +467,12 @@ h4 {
 }
 
 .hero-title {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   font-weight: 900px;
   font-size: 26px;
   line-height: 1.36;
@@ -483,6 +492,8 @@ h4 {
   letter-spacing: 0.06em;
   margin-top: 30px;
   margin-bottom: 200px;
+  margin-right: auto;
+  margin-left: auto;
 }
 
 .button.primary {
@@ -866,7 +877,16 @@ h4 {
 
 @media screen and (min-width: 768px) {
   .set-items {
-    width: 50%;
+    width: 354px;
+  }
+  .set-items:nth-child(2n+1) {
+    margin-right: 30px;
+  }
+  .set-items:nth-child(n+2) {
+    margin-bottom: 60px;
+  }
+  .set-items:nth-child(-n+2) {
+    margin-bottom: 30px;
   }
 }
 

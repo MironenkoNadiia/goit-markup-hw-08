@@ -139,7 +139,16 @@
 
 .set-items {
   @media screen and (min-width: $tablet) {
-    width: 50%;
+    width: 354px;
+    &:nth-child(2n+1){
+      margin-right: 30px;
+    }
+    &:nth-child(n+2){
+      margin-bottom: 60px;
+    }
+    &:nth-child(-n+2){
+      margin-bottom: 30px;
+    }
 
   
     
