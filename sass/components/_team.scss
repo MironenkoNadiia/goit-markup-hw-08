@@ -23,9 +23,16 @@
 
   @media screen and (min-width:$tablet) {
     max-width: 354px;
-    justify-content: space-evenly;
-    
-    
+    &:nth-child(2n+1){
+      margin-right: 30px;
+      
+    }
+    &:nth-child(n+2){
+      margin-bottom: 60px;
+    }
+    &:nth-child(-n+2){
+      margin-bottom: 30px;
+    }
     }
 
     @media screen and (min-width:$desctop) {

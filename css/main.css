@@ -841,7 +841,7 @@ h4 {
 
 @media screen and (min-width: 768px) {
   .set {
-    width: 768px;
+    width: 738px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -942,9 +942,15 @@ h4 {
 @media screen and (min-width: 768px) {
   .white-background {
     max-width: 354px;
-    -webkit-box-pack: space-evenly;
-        -ms-flex-pack: space-evenly;
-            justify-content: space-evenly;
+  }
+  .white-background:nth-child(2n+1) {
+    margin-right: 30px;
+  }
+  .white-background:nth-child(n+2) {
+    margin-bottom: 60px;
+  }
+  .white-background:nth-child(-n+2) {
+    margin-bottom: 30px;
   }
 }
 
