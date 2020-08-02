@@ -17,6 +17,17 @@
   @media screen and (min-width:$tablet) {
     max-width: 354px;
     justify-content: space-evenly;
+    
+      margin: 15px;
+    
+    }
+
+    @media screen and (min-width:$desctop) {
+    width: 270px;
+    justify-content: space-evenly;
+    &:not(:last-child){
+      margin-right: 30px;
+    }
     }
   }
 
@@ -75,4 +86,8 @@
     height: auto;
   }
   
+  @media screen and(min-width:$desctop){
+    max-width: 270px;
+    height: auto;
+  }
 }

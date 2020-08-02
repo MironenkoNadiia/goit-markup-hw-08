@@ -1,5 +1,11 @@
 .activity {
-  display: none;
+  
+    display: none;
+    @media screen and (min-width:$desctop) {
+      display: flex;
+    }
+  
+  
 }
 
 .just-cont {

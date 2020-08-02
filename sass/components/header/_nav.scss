@@ -31,15 +31,20 @@
     display: flex;
     align-items: center;
   
-    
-  
   }
 
 }
 
+
 .list-nav {
   @media screen and(min-width:$tablet){
     display: flex;
+    align-items: center;
+  }
+
+  @media screen and(min-width:$desctop){
+    max-width: $desctop;
+
   }
 }
 .nav-text {

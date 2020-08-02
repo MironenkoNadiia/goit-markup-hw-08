@@ -51,6 +51,8 @@ body {
   }
   @media screen and (min-width: $desctop) {
     width: $desctop;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 

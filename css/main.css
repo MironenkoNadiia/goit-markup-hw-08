@@ -63,6 +63,8 @@ body {
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
+    padding-left: 30px;
+    padding-right: 30px;
   }
 }
 
@@ -136,7 +138,7 @@ h4 {
   .logo {
     margin-top: 24px;
     margin-bottom: 24px;
-    margin-left: 200px;
+    margin-left: 25px;
     margin-right: 85px;
     width: 153px;
     height: 31px;
@@ -192,6 +194,15 @@ h4 {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
+    -webkit-box-align: center;
+        -ms-flex-align: center;
+            align-items: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .list-nav {
+    max-width: 1200px;
   }
 }
 
@@ -710,6 +721,13 @@ h4 {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .antenna {
+    width: 270px;
+    height: 120px;
+  }
+}
+
 .clock {
   display: inline-block;
   height: 120px;
@@ -729,6 +747,13 @@ h4 {
     width: 354px;
     height: 120px;
     margin-right: 0;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .clock {
+    width: 270px;
+    height: 120px;
   }
 }
 
@@ -754,6 +779,13 @@ h4 {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .diagram {
+    width: 270px;
+    height: 120px;
+  }
+}
+
 .astronaut {
   display: inline-block;
   height: 120px;
@@ -776,6 +808,13 @@ h4 {
   }
 }
 
+@media screen and (min-width: 1200px) {
+  .astronaut {
+    width: 270px;
+    height: 120px;
+  }
+}
+
 .section-title {
   font-size: 14px;
   line-height: 16px;
@@ -790,6 +829,7 @@ h4 {
 
 @media screen and (min-width: 768px) {
   .set {
+    width: 768px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -803,11 +843,15 @@ h4 {
 
 @media screen and (min-width: 1200px) {
   .set {
+    width: 1170px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
     -ms-flex-wrap: wrap;
         flex-wrap: wrap;
+  }
+  .set:not(:last-child) {
+    margin-right: 30px;
   }
 }
 
@@ -825,6 +869,14 @@ h4 {
 
 .activity {
   display: none;
+}
+
+@media screen and (min-width: 1200px) {
+  .activity {
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+  }
 }
 
 .just-cont {
@@ -873,6 +925,19 @@ h4 {
     -webkit-box-pack: space-evenly;
         -ms-flex-pack: space-evenly;
             justify-content: space-evenly;
+    margin: 15px;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .white-background {
+    width: 270px;
+    -webkit-box-pack: space-evenly;
+        -ms-flex-pack: space-evenly;
+            justify-content: space-evenly;
+  }
+  .white-background:not(:last-child) {
+    margin-right: 30px;
   }
 }
 
@@ -932,6 +997,13 @@ h4 {
 @media screen and (min-width: 768px) {
   .photo {
     max-width: 354px;
+    height: auto;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .photo {
+    max-width: 270px;
     height: auto;
   }
 }
