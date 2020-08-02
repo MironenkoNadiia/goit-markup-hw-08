@@ -1583,5 +1583,8 @@ h4 {
   .set-item {
     width: 370px;
   }
+  .set-item:not(:last-child) {
+    margin-right: 15px;
+  }
 }
 /*# sourceMappingURL=main.css.map */

@@ -108,5 +108,9 @@
 }
   @media screen and (min-width: $desctop) {
     width: 370px;
+    &:not(:last-child){
+    margin-right: 15px;
+    }
+    
   }
 }
