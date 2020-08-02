@@ -45,7 +45,6 @@ body {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  text-align: center;
 }
 
 @media screen and (min-width: 480px) {
@@ -63,8 +62,8 @@ body {
 @media screen and (min-width: 1200px) {
   .container {
     width: 1200px;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 
@@ -293,6 +292,12 @@ h4 {
           align-items: center;
 }
 
+@media screen and (min-width: 1200px) {
+  .adress {
+    margin-left: auto;
+  }
+}
+
 .phone-numbers {
   font-size: 18px;
   line-height: 1.2;
@@ -311,6 +316,13 @@ h4 {
   text-decoration: none;
   margin-bottom: 10px;
   cursor: pointer;
+}
+
+@media screen and (min-width: 1200px) {
+  .mail-button {
+    padding-top: 32px;
+    padding-bottom: 32px;
+  }
 }
 
 .mail-button-icon {
@@ -843,7 +855,7 @@ h4 {
 
 @media screen and (min-width: 1200px) {
   .set {
-    width: 1200px;
+    width: 1170px;
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
@@ -860,7 +872,10 @@ h4 {
 
 @media screen and (min-width: 1200px) {
   .set-items {
-    width: 25%;
+    width: 270px;
+  }
+  .set-items:not(:last-child) {
+    margin-right: 30px;
   }
 }
 
@@ -938,9 +953,24 @@ h4 {
 }
 
 .black-text {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
   color: #212121;
   letter-spacing: 0.03em;
   margin-top: 30px;
+}
+
+.position {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
 }
 
 .around {

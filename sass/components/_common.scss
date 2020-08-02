@@ -41,7 +41,6 @@ body {
   margin-right: auto;
   padding-left: 15px;
   padding-right: 15px;
-  text-align: center;
 
   @media screen and (min-width: $mobile) {
     width: $mobile;
@@ -51,8 +50,8 @@ body {
   }
   @media screen and (min-width: $desctop) {
     width: $desctop;
-    padding-left: 30px;
-    padding-right: 30px;
+    padding-left: 15px;
+    padding-right: 15px;
   }
 }
 

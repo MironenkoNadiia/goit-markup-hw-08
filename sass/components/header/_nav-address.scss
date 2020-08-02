@@ -2,6 +2,10 @@
   display: flex;
   flex-direction: column;
   align-items: center;
+
+  @media screen and(min-width:$desctop) {
+    margin-left: auto;
+  }
   
 }
 
@@ -21,6 +25,11 @@
   text-decoration: none;
   margin-bottom: 10px;
   cursor: pointer;
+
+  @media screen and(min-width:$desctop){
+    padding-top: 32px;
+  padding-bottom: 32px;
+  }
 }
 
 .mail-button-icon {

@@ -1,5 +1,6 @@
 .team-background {
   background-color: #F5F4FA;
+  
 }
 
 .white-background {
@@ -24,6 +25,7 @@
     @media screen and (min-width:$desctop) {
     width: 270px;
     justify-content: space-evenly;
+    
     &:not(:last-child){
       margin-right: 30px;
     }
@@ -31,9 +33,16 @@
   }
 
 .black-text {
+  display: flex;
+  justify-content: center;
   color: $secondary-color;
   letter-spacing: 0.03em;
   margin-top: 30px;
+}
+
+.position {
+  display: flex;
+  justify-content: center;
 }
 
 .around {
