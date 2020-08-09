@@ -47,8 +47,8 @@ margin-bottom: 8px;
 
 
 .join {
-  margin-left: 137px;
-  margin-right: 137px;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 56px;
   margin-bottom: 56px;
   color: $white-color;
@@ -93,7 +93,7 @@ margin-bottom: 8px;
 }
 
 .subscribe {
-  width: 450px;
+  width: 100%;
   margin-bottom: 20px;
  
   border: 1px solid rgba(255, 255, 255, 0.3);

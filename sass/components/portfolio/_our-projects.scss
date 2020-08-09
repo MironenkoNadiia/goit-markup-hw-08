@@ -14,6 +14,7 @@
 }
 
 .our-projects {
+  width: 100%;
   position: relative;
   margin-bottom: 20px;
 }
@@ -101,10 +102,19 @@
 }
 
 .set-item {
-  width: 370px;
+  
+object-fit: contain;
 
     @media screen and (min-width: $tablet) {
     width: 354px;
+
+    &:nth-child(odd) {
+      margin-right: 30px;
+    }
+
+    &:last-child {
+      margin-right: 0;
+    }
 }
   @media screen and (min-width: $desctop) {
     width: 370px;
@@ -113,4 +123,8 @@
     }
     
   }
+}
+
+.pic {
+  width: 100%;
 }

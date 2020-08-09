@@ -108,3 +108,21 @@ h4 {
   letter-spacing: 0.03em;
   text-transform: uppercase;
 }
+
+.set {
+  
+  @media screen and (min-width: $tablet) {
+    width: 738px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
+  @media screen and (min-width: $desctop) {
+    width:1170px;
+    display: flex;
+    flex-wrap: wrap;
+    
+  }
+  
+}

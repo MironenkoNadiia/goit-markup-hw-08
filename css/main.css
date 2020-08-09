@@ -116,6 +116,31 @@ h4 {
   text-transform: uppercase;
 }
 
+@media screen and (min-width: 768px) {
+  .set {
+    width: 738px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+    -webkit-box-pack: center;
+        -ms-flex-pack: center;
+            justify-content: center;
+  }
+}
+
+@media screen and (min-width: 1200px) {
+  .set {
+    width: 1170px;
+    display: -webkit-box;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-wrap: wrap;
+        flex-wrap: wrap;
+  }
+}
+
 .logo {
   display: block;
   font-family: "Raleway", sans-serif;
@@ -421,11 +446,11 @@ h4 {
 }
 
 .overlay {
-  width: 480px;
-  height: 400px;
+  width: 100%;
   background-image: -webkit-gradient(linear, left top, right top, from(rgba(47, 48, 58, 0.8)), to(rgba(47, 48, 58, 0.8))), url("../img/images/Header-for-phone.jpg");
   background-image: linear-gradient(to right, rgba(47, 48, 58, 0.8), rgba(47, 48, 58, 0.8)), url("../img/images/Header-for-phone.jpg");
-  background-size: contain;
+  background-size: cover;
+  background-repeat: no-repeat;
 }
 
 @media screen and (-webkit-min-device-pixel-ratio: 2), screen and (min-resolution: 2dppx) {
@@ -724,8 +749,7 @@ h4 {
 
 .antenna {
   display: inline-block;
-  height: 120px;
-  width: 450px;
+  width: 100%;
   margin-bottom: 30px;
   border-radius: 4px;
   border-style: none;
@@ -753,8 +777,7 @@ h4 {
 
 .clock {
   display: inline-block;
-  height: 120px;
-  width: 450px;
+  width: 100%;
   border-radius: 4px;
   border-style: none;
   background-color: #F5F4FA;
@@ -782,8 +805,7 @@ h4 {
 
 .diagram {
   display: inline-block;
-  height: 120px;
-  width: 450px;
+  width: 100%;
   border-radius: 4px;
   border-style: none;
   background-color: #F5F4FA;
@@ -811,8 +833,7 @@ h4 {
 
 .astronaut {
   display: inline-block;
-  height: 120px;
-  width: 450px;
+  width: 100%;
   border-radius: 4px;
   border-style: none;
   background-color: #F5F4FA;
@@ -850,29 +871,9 @@ h4 {
   color: #757575;
 }
 
-@media screen and (min-width: 768px) {
-  .set {
-    width: 738px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-  }
-}
-
-@media screen and (min-width: 1200px) {
-  .set {
-    width: 1170px;
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -ms-flex-wrap: wrap;
-        flex-wrap: wrap;
-  }
+.set-items {
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 @media screen and (min-width: 768px) {
@@ -947,7 +948,7 @@ h4 {
   -webkit-box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
           box-shadow: 0px 2px 1px rgba(0, 0, 0, 0.2), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 1px 3px rgba(0, 0, 0, 0.12);
   border-radius: 0px 0px 4px 4px;
-  width: 450px;
+  width: 100%;
   height: auto;
 }
 
@@ -1054,7 +1055,7 @@ h4 {
 
 .photo {
   display: inline-block;
-  width: 450px;
+  width: 100%;
 }
 
 @media screen and (min-width: 768px) {
@@ -1239,8 +1240,8 @@ h4 {
 }
 
 .join {
-  margin-left: 137px;
-  margin-right: 137px;
+  margin-left: auto;
+  margin-right: auto;
   margin-top: 56px;
   margin-bottom: 56px;
   color: #ffffff;
@@ -1292,7 +1293,7 @@ h4 {
 }
 
 .subscribe {
-  width: 450px;
+  width: 100%;
   margin-bottom: 20px;
   border: 1px solid rgba(255, 255, 255, 0.3);
   -webkit-box-sizing: border-box;
@@ -1474,6 +1475,7 @@ h4 {
 }
 
 .our-projects {
+  width: 100%;
   position: relative;
   margin-bottom: 20px;
 }
@@ -1570,12 +1572,19 @@ h4 {
 }
 
 .set-item {
-  width: 370px;
+  -o-object-fit: contain;
+     object-fit: contain;
 }
 
 @media screen and (min-width: 768px) {
   .set-item {
     width: 354px;
+  }
+  .set-item:nth-child(odd) {
+    margin-right: 30px;
+  }
+  .set-item:last-child {
+    margin-right: 0;
   }
 }
 
@@ -1586,5 +1595,9 @@ h4 {
   .set-item:not(:last-child) {
     margin-right: 15px;
   }
+}
+
+.pic {
+  width: 100%;
 }
 /*# sourceMappingURL=main.css.map */
